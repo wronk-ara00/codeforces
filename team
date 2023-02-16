@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+  int tc,a,b,c,i;
+  scanf("%d",&tc);
+  i=0;
+  while(tc!=0){
+    scanf("%d %d %d",&a,&b,&c);
+
+    if((a==1&&b==1&&c==1)||(a==1&&b==1&&c==0)||(a==1&&b==0&&c==1)||(a==0&&b==1&&c==1)){
+        i+=1;
+
+    }
+        tc--;
+  }
+  printf("%d",i);
+
+  return 0;
+}
+
